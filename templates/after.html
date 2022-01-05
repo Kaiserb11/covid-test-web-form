@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Demo</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='after_style.css')}}">
+</head>
+
+<body>
+
+<section id = "card" style="background-color: aliceblue;">
+
+
+    {%if data[0] == 1%}
+
+    <h1>
+        <div class="row">
+            <div class="column" style="padding-top : 40px;">
+                <h2>You are advised to take the test again after a few days</h2>
+                <p>From your symptoms it seems that you show moderate signs of sickness. At this point this can be anything form mild cold to preliminary covid
+                    Hence you are advised to take this test again after a few days as it would help you get a better understanding.
+    
+                </p>
+            </div>
+            <div class="column">
+                <div class="ele">
+                    <iframe src="https://www.youtube.com/embed/-Fdo_HT3X80/" width="430px" height="300"
+                        style="border: none;"></iframe>
+                </div>
+    
+            </div>
+        </div>
+    </h1>
+
+    {%elif data[0] == 0%}
+    <h1>
+        <div class="row">
+            <div class="column" style="padding-top : 40px;">
+                <h2>You are fine</h2>
+                <p>From your symptoms it seems that you are not at risk. You are advised follow all the covid norms and sit tight.
+    
+                </p>
+            </div>
+            <div class="column">
+                <div class="ele">
+                    <iframe src="https://www.youtube.com/embed/-Fdo_HT3X80/" width="430px" height="300"
+                        style="border: none;"></iframe>
+                </div>
+    
+            </div>
+        </div>
+    </h1>
+    {%else%}
+    <h1>
+        <div class="row">
+            <div class="column" style="padding-top : 40px;">
+                <h2>You should go for Testing</h2>
+                <p>From your symptoms it seems that you are at risk !!!. You shoud prioritize going to a nearby
+                    test centre and get yourself tested. 
+    
+                </p>
+            </div>
+            <div class="column">
+                <div class="ele">
+                    <iframe src="https://www.youtube.com/embed/-Fdo_HT3X80/" width="430px" height="300"
+                        style="border: none;"></iframe>
+                </div>
+    
+            </div>
+        </div>
+    </h1>
+    {%endif%}
+
+    <br><br>
+    <a href='/' style="padding-left: 37px;">Home</a>
+
+</section>
+
+</body>
+</html>

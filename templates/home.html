@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Demo</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+<form method="POST", action="{{url_for('home')}}">
+<section id = "card">
+    <header class = "card-title">
+        COVID TEST FORM
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <div class="col-item1">
+                <div class="col-text">
+                    <label for="name">Age</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="a">
+                </div>
+                <div class="col-text">
+                    <label for="email">Gender</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="b">
+                </div>
+                <div class="col-text">
+                    <label for="text">Temperature</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="c">
+                </div>
+                <div class="col-text">
+                    <label for="text">Cough</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="d">
+                </div>
+                <div class="col-text">
+                    <label for="text">Sour Throat</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="e">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="column">
+            <div class="col-item1">
+                <div class="col-text">
+                    <label for="name">Weakness</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="f">
+                </div>
+                <div class="col-text">
+                    <label for="email">Breadthing Problem</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="g">
+                </div>
+                <div class="col-text">
+                    <label for="text">Drowsiness</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="h">
+                </div>
+                <div class="col-text">
+                    <label for="text">Pain in Chest</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="i">
+                </div>
+                <div class="col-text">
+                    <label for="text">Travel History</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="j">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="column">
+            <div class="col-item1">
+                <div class="col-text">
+                    <label for="name">Diabetes</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="k">
+                </div>
+                <div class="col-text">
+                    <label for="email">heart Disease</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="l">
+                </div>
+                <div class="col-text">
+                    <label for="text">Lung Disease</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="m">
+                </div>
+                <div class="col-text">
+                    <label for="text">Stroke History</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="n">
+                </div>
+                <div class="col-text">
+                    <label for="text">Symptoms Progress</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="o">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="column">
+            <div class="col-item1">
+                <div class="col-text">
+                    <label for="name">High Blood Pressure</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="p">
+                </div>
+                <div class="col-text">
+                    <label for="email">Kidney disease</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="q">
+                </div>
+                <div class="col-text">
+                    <label for="text">Change in Appetite</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="r">
+                </div>
+                <div class="col-text">
+                    <label for="text">Loss of smell</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="s">
+                </div>
+                <div class = "col-sub" style="padding-top: 25px;" >
+                    <input type="submit" value="predict!">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+</section>
+</form>
+</body>
+</html>
